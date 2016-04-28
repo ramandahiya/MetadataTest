@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raman.first.ScrollActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+            <ImageView
+                android:id="@+id/background"
+                app:layout_collapseMode="parallax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:mipmap/sym_def_app_icon">
+
+            </ImageView>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       >
+
+      <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+          android:focusableInTouchMode="true"
+          android:focusable="true"
+          android:orientation="vertical">
+
+       <android.support.design.widget.TextInputLayout
+          android:padding="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+           <EditText
+               android:background="@android:color/transparent"
+               android:id="@+id/emailEditText"
+               android:inputType="textEmailAddress"
+               android:hint="Enter email id"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+       <android.support.design.widget.TextInputLayout
+           android:padding="5dp"
+           android:background="@android:color/transparent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:background="@android:color/transparent"
+               android:id="@+id/addressEditText"
+
+               android:hint="Enter address"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </android.support.design.widget.TextInputLayout>
+
+
+       <android.support.design.widget.TextInputLayout
+           android:padding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:background="@android:color/transparent"
+               android:id="@+id/phoneEditText"
+               android:inputType="number"
+               android:hint="Enter phone number"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </android.support.design.widget.TextInputLayout>
+
+
+       <android.support.design.widget.TextInputLayout
+           android:padding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:background="@android:color/transparent"
+               android:id="@+id/designationEditText"
+               android:hint="Enter designation"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:padding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:background="@android:color/transparent"
+               android:id="@+id/departmentEditText"
+               android:hint="Enter department"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:padding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:background="@android:color/transparent"
+               android:id="@+id/incomeEditText"
+               android:inputType="number"
+               android:hint="Enter income"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+
+   </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_edit" />
+
+</android.support.design.widget.CoordinatorLayout>

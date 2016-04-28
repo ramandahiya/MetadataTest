@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Metadata</string>
+
+
+
+    <string name="Database_onCreate">
+        CREATE TABLE AUTH_TABLE(ID INTEGER PRIMARY KEY AUTOINCREMENT,FIRSTNAME TEXT NOT NULL,LASTNAME TEXT NOT NULL,EMAIL TEXT NOT NULL); \n
+        CREATE TABLE DETAIL_TABLE(ID INTEGER,ADDRESS TEXT,PHONE TEXT,DESIGNATION TEXT,DEPARTMENT TEXT,INCOME TEXT,FOREIGN KEY(ID) REFERENCES AUTH_TABLE(ID));
+    </string>
+
+    <string name="Database_onUpgrade">
+        DROP TABLE IF EXISTS MY_TABLE; \n
+    </string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_signin">Sign In</string>
+
+</resources>

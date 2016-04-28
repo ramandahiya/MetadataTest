@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorPrimary">#ee632c</color>-->
+    <!--<color name="colorPrimaryDark">#d84911</color>-->
+    <color name="colorSecondary">#2d96df</color>
+    <color name="colorSecondaryDark">#288fd7</color>
+    <!--<color name="colorAccent">#3F51B5</color>-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="gray_zero">#f1f4f7</color>
+    <color name="colorGray">#677C97</color>
+    <color name="grey_one">#f1f4f7</color>
+    <color name="grey_two">#e1dfdf</color>
+    <color name="grey_three">#d5d4d4</color>
+    <color name="grey_four">#9d9c9c</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="orange">#ed5215</color>
+    <color name="success_button_background">#ddeadf</color>
+    <color name="success_button_text_color">#638959</color>
+    <color name="text_title">#2c4466</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+</resources>
